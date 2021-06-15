@@ -1,0 +1,567 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+@import url(https://fonts.googleapis.com/css?family=Vast+Shadow);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+#menu {
+  background-color: #ece2e2;
+}
+
+.page-full-title {
+  margin: 0;
+  color: #c46628;
+  text-align: center;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 3;
+}
+.subtitle {
+  margin: 0;
+  color: #662d07;
+  text-align: center;
+  font-weight: 600;
+  font-size: 51px;
+  /* line-height: 4; */
+  margin-bottom: 40px;
+  /* line-height: 4; */
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fbfbf3;
+  background-image: url("../assets/inka-cotton-cretonne--33_4671_01.jpeg");
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: #232323;
+}
+.name {
+  color: #414549;
+}
+.price {
+  font-family: "Stint Ultra Expanded", sans-serif;
+  color: #13a713;
+  background-color: rgb(214, 235, 214);
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.desc {
+  color: #48494d;
+  font-size: 19px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  margin-top: 8px;
+  font-family: "sofia-pro", "sans-serif";
+  /* padding: 0 16px; */
+}
+.menu-card {
+  align-self: center;
+}
+.section-card-wrapper {
+  margin-left: 127px;
+  margin-right: 127px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: #f9fbfb;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media screen and (min-width: 769px) {
+  .section-card-wrapper {
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 40px;
+    background-color: #f9fbfb;
+
+    /* margin-left: 197px;
+margin-right: 197px;
+margin-top: -10px; */
+  }
+}
+.section-title {
+  background-color: indianred;
+  padding: 20px;
+}
+#appetizer {
+  /* background-color: rgb(241, 236, 158); */
+  padding-bottom: 0px;
+}
+#burger {
+  background-color: rgb(241, 213, 118);
+  padding-bottom: 40px;
+}
+#soup_salad {
+  background-color: rgb(210, 228, 161);
+  padding-bottom: 40px;
+}
+#dessert {
+  background-color: lightblue;
+  padding-bottom: 80px;
+}
+.section-card-wrapper.appetizer,
+.burger,
+.dessert,
+.soup_salad {
+  /* margin-left: 80px;
+  margin-right: 80px; */
+  border-radius: 6px;
+  /* margin-bottom: 10px; */
+}
+.is-pulled-right {
+  float: right;
+}
+.menu_details {
+  display: inline-flex;
+}
+.button {
+  margin-right: -54px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: all 100ms ease-out;
+  color: #fff;
+  background-color: #1a73e8;
+  height: 36px;
+  letter-spacing: 0.25px;
+  text-transform: none;
+  border: 1px solid #42afe3;
+  width: 24%;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 8px;
+  font: 400 13.3333px Arial;
+  font-size: larger;
+  font-family: "Muli", sans-serif;
+  color: #fff;
+}
+.button:hover {
+  border: 1px solid #2562c4;
+  background-color: #2562c4;
+  color: #fff;
+}
+
+@media screen and (min-width: 980px) {
+  .section-card-wrapper {
+    display: flex;
+  }
+}
+.section-card-wrapper.is-gapless:not(:last-child) {
+  margin: 0 0 20px;
+}
+.section-card-wrapper.is-gapless > .menu-card {
+  margin: 0;
+  padding: 0;
+}
+.item-card.is-multiline {
+  flex-wrap: wrap;
+}
+.item-card.is-vcentered {
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .item-card.is-grid {
+    flex-wrap: wrap;
+  }
+  .item-card.is-grid > .column {
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
+    padding: 10px;
+    width: 33.3333%;
+  }
+  .item-card.is-grid > .column + .column {
+    margin-left: 0;
+  }
+}
+
+.item-card .menu_item {
+  padding: 20px 0;
+}
+
+.item-card .menu_item + .menu_item {
+  border-top: 1px dotted #ccc;
+}
+
+.columns .item-title {
+  font-family: "Vast Shadow", cursive;
+  text-align: center;
+  color: #dd1021;
+}
+.columns .item-name {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.item-card .price {
+  font-family: "Stint Ultra Expanded", sans-serif;
+}
+
+.item-card .desc {
+  padding: 20px 0;
+  line-height: 1.4;
+}
+
+.header {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header li {
+  display: inline-block;
+}
+
+.header a {
+  display: block;
+  color: #4a4a4a;
+  padding: 30px 20px;
+}
+
+a.home {
+  color: #4d00ff;
+}
+
+/* .menu-wrapper{
+      background-color: rgb(184, 134, 134);
+    } */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  background-color: white;
+}
+
+.section-card-wrapper .collection {
+  margin: 10px 0;
+  padding: 10px;
+}
+@media (max-width: 720px) {
+  .section-card-wrapper .collection {
+    padding: 15px;
+  }
+}
+
+.section-title {
+  font-family: ui-sans-serif sans-pro;
+  text-align: center;
+  /* color: #104edd; */
+  color: #e6e9ee;
+  font-weight: bold;
+  font-size: 15px;
+  /* float: right; */
+}
+
+/* Banner Section */
+
+.banner {
+  background-color: #4d00ff;
+  padding: 100px 0;
+  margin-top: 77px;
+  text-align: center;
+}
+
+/*hide-and-go Sections */
+
+#hide-and-go {
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  color: #4c4c4c;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-image: url("../assets/better_than_drake.png");
+  background-size: cover;
+  display: inline-block;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 535px) {
+  .header {
+    font-size: 14px;
+  }
+
+  .header a {
+    padding: 30px 20px;
+  }
+
+  a.home {
+    display: none;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="button"] {
+  width: auto;
+  overflow: visible;
+}
+
+@keyframes spin-around {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+html {
+  background: #f5f7fa;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+textarea {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  color: #69707a;
+  font-size: 1rem;
+  line-height: 1.428571428571429;
+}
+
+a {
+  color: #1fc8db;
+  cursor: pointer;
+  text-decoration: none;
+  transition: none 86ms ease-out;
+}
+a:hover {
+  color: #222324;
+}
+
+hr {
+  border-top-color: #d3d6db;
+  margin: 20px 0;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-half {
+  flex: none;
+  width: 50%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-third {
+  flex: none;
+  width: 33.3333%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-quarter {
+  flex: none;
+  width: 25%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-1-mobile {
+  flex: none;
+  width: 8.33333%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-2-mobile {
+  flex: none;
+  width: 16.66667%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-3-mobile {
+  flex: none;
+  width: 25%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-4-mobile {
+  flex: none;
+  width: 33.33333%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-5-mobile {
+  flex: none;
+  width: 41.66667%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-6-mobile {
+  flex: none;
+  width: 50%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-7-mobile {
+  flex: none;
+  width: 58.33333%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-8-mobile {
+  flex: none;
+  width: 66.66667%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-9-mobile {
+  flex: none;
+  width: 75%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-10-mobile {
+  flex: none;
+  width: 83.33333%;
+}
+.section-card-wrapper.is-mobile > .menu-card.is-11-mobile {
+  flex: none;
+  width: 91.66667%;
+}
+
+.section-card-wrapper {
+  /* margin-left: -5px;
+  margin-right: -5px; */
+  margin-top: -10px;
+  /* flex-wrap: wrap-reverse; */
+}
+
+.footer {
+  background-color: #554433;
+}
+
+.columns .menu_item:after,
+.modal .menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+.modal .menu {
+  position: relative;
+  padding: 0 20px;
+  border-radius: 0;
+  background-color: #fff;
+}
+.modal .modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px 50px 50px;
+  width: 90%;
+  max-width: 750px;
+  background-color: #fbfbf3;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+}
+.modal .modal-container .title {
+  font-family: "Vast Shadow", cursive;
+  font-size: 28px;
+  text-align: center;
+  color: #dd1021;
+}
+.modal .modal-container .close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+.modal .modal-container .close:hover {
+  color: #dd1021;
+}
+.modal .modal-container .remove {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+  font-size: 1rem;
+}
+.modal .modal-container .remove:hover {
+  color: #dd1021;
+}
+.modal .menu-item {
+  position: relative;
+  padding: 20px 0;
+}
+.modal .menu-item .price {
+  margin-right: 30px;
+}
+.modal .menu-item + .menu-item {
+  border-top: 1px dotted #ccc;
+}
+.modal .button {
+  background-color: #dd1021;
+  color: #fff;
+}
+.modal .button:hover {
+  background-color: #f03040;
+  color: #fff;
+}
